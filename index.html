@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My first Rive</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <script src="https://unpkg.com/@rive-app/canvas@1.0.79"></script>
+    <script>
+      new rive.Rive({
+        src: "./like.riv",
+        canvas: document.getElementById("canvas"),
+        autoplay: true,
+        stateMachines: "State",
+      });
+    </script>
+  </body>
+</html>
